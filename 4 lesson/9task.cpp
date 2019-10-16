@@ -58,4 +58,5 @@ void wtf(int n,long int a)
             wtf(n-1,a*10+j);
         }
     }
+    
 }
