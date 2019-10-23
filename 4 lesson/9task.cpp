@@ -2,20 +2,20 @@
 long int a;
 int N;
 using namespace std;
-void wtf(int n,long int a);
+void f(int n,long int a);
 int main()
 {
 
     cin >> N;
     for(int i=1; i<10; i++)
     {
-        wtf((N-2)/2,i);
+        f((N-2)/2,i);
     }
 
     return 0;
 }
 
-void wtf(int n,long int a)
+void f(int n,long int a)
 {
     if(n==0)
     {
@@ -55,7 +55,7 @@ void wtf(int n,long int a)
     {
         for(int j=0; j<10; j++)
         {
-            wtf(n-1,a*10+j);
+            f(n-1,a*10+j);
         }
     }
     
